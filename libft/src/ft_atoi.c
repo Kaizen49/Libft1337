@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 18:42:07 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 19:49:08 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/21 19:36:57 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	ft_atoi(const char *str)
 {
 	size_t		i;
-	int		sign;
-	long	result;
+	int			sign;
+	long		result;
 
 	i = 0;
 	sign = 1;
