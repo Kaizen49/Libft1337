@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 19:04:06 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/18 17:51:42 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/22 20:15:52 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -167,9 +167,25 @@
 // 		printf("%s\n", *strs++);
 // }
 
-#include <stdio.h>
-int main ()
+// #include <stdio.h>
+// int main ()
+// {
+// 	printf("%s", ft_itoa(-46546));
+// 	return (0);
+// }
+
+
+#include "libft.h"
+
+int	main(void)
 {
-	printf("%s", ft_itoa(-46546));
+	char	str1[] = "Hello";
+	char	str2[] = "Hello";
+
+	ft_memset(str1, 'A', 3);
+	memset(str2, 'A', 3);
+
+	printf("ft_memset: %s\n", str1);
+	printf("memset:    %s\n", str2);
 	return (0);
 }

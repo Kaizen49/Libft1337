@@ -1,16 +1,16 @@
-
-
-
 #include "./src/libft.h"
-#include <stdio.h>
 
-
-int main()
+int	main(void)
 {
-	t_list *new;
-	int	content = 12;
-	new = ft_lstnew(&content);
-	printf("%d", *(int *)(*new).content);
+	char	str1[] = "Hello";
+	char	str2[] = "Hello";
+
+	ft_memset(str1, 'A', 3);
+	memset(str2, 'A', 3);
+
+	printf("ft_memset: %s\n", str1);
+	printf("memset:    %s\n", str2);
+	return (0);
 }
 
 

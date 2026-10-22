@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 20:01:59 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 17:23:44 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/22 21:29:54 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,16 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+
+// int	main(void)
+// {
+// 	char	str1[] = "Hello";
+// 	char	str2[] = "Hello";
+
+// 	ft_memset(str1, 'A', 3);
+// 	memset(str2, 'A', 3);
+
+// 	printf("ft_memset: %s\n", str1);
+// 	printf("memset:    %s\n", str2);
+// 	return (0);
+// }

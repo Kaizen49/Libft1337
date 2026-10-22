@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 20:05:33 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/21 19:35:27 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/22 20:00:07 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdio.h>
 
 /* Character checks */
 int				ft_isalpha(int c);
