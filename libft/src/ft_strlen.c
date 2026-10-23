@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 17:45:15 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 19:28:41 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 20:08:17 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,4 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
+

@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 13:08:32 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 19:21:56 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 19:57:31 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (len);
 }
+// #include <stdio.h>
+// #include "libft.h"
+
+// int	main(void)
+// {
+// 	char	dst[10];
+// 	const char	*src = "Bonjour";
+// 	size_t	ret;
+
+// 	ret = ft_strlcpy(dst, src, sizeof(dst));
+// 	printf("Destination : %s\n", dst);
+// 	printf("Valeur retour : %zu\n", ret);
+// 	return (0);
+// }

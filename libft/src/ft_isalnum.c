@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 21:16:19 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/19 19:06:35 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 11:21:00 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,13 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	printf("%d\n", ft_isalnum('A'));
+// 	printf("%d\n", ft_isalnum('7'));
+// 	printf("%d\n", ft_isalnum('@'));
+// 	return (0);
+// }

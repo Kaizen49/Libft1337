@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 16:16:37 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/19 19:42:11 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 11:39:23 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,3 +56,24 @@ char	*ft_itoa(int n)
 		result[0] = '-';
 	return (result);
 }
+
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	*str;
+
+// 	str = ft_itoa(-123);
+// 	if (!str)
+// 		return (1);
+// 	printf("%s\n", str);
+// 	free(str);
+
+// 	str = ft_itoa(0);
+// 	if (!str)
+// 		return (1);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	return (0);
+// }

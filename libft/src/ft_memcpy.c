@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 18:06:26 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 17:08:55 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 12:18:47 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,15 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (d);
 }
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	src[] = "Bonjour";
+// 	char	dst[20];
+
+// 	ft_memcpy(dst, src, 8);
+// 	printf("%s\n", dst);
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 21:09:28 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/19 19:02:03 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 19:33:20 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,24 @@ void	*ft_calloc(size_t count, size_t size)
 	return (ft_memset(tocalloc, 0, count * size));
 }
 
-// #include<stddef.h>
-//  #include <stdio.h>
-// int main ()
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
 // {
-//   printf("%lu", (size_t)-1 );
+// 	int	*tab;
+// 	int	i;
+
+// 	tab = ft_calloc(5, sizeof(int));
+// 	if (!tab)
+// 		return (1);
+// 	i = 0;
+// 	while (i < 5)
+// 	{
+// 		printf("%d ", tab[i]);
+// 		i++;
+// 	}
+// 	free(tab);
+// 	return (0);
 // }
+

@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 17:15:55 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 19:14:25 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 16:55:57 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,27 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_copy_join(result, s1, s2);
 	return (result);
 }
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	char	*s1;
+// 	char	*s2;
+// 	char	*result;
+
+// 	s1 = "dimadima ";
+// 	s2 = "raja";
+// 	result = ft_strjoin(s1, s2);
+// 	if (!result)
+// 	{
+// 		printf("Error: allocation failed\n");
+// 		return (1);
+// 	}
+// 	printf("String 1: %s\n", s1);
+// 	printf("String 2: %s\n", s2);
+// 	printf("Joined: %s\n", result);
+// 	free(result);
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 17:18:50 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/21 19:39:08 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 12:13:06 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	printf("%d\n", ft_memcmp("abc", "kbc", 3));
+// 	printf("%d\n", ft_memcmp("abc", "abd", 3));
+// 	printf("%d\n", ft_memcmp("abd", "abc", 3));
+// 	return (0);
+// }

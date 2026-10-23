@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 21:27:57 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 17:34:40 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 13:02:33 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,12 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
+// #include "libft.h"
+
+// int	main(void)
+// {
+// 	ft_putendl_fd("Bonjour", 1);
+// 	ft_putendl_fd("Erreur", 2);
+// 	ft_putendl_fd(NULL, 1);
+// 	return (0);
+// }

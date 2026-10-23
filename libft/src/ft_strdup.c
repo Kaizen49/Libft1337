@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 18:19:12 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 19:09:06 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 16:34:32 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,12 @@ char	*ft_strdup(const char *s1)
 	s2[i] = '\0';
 	return (s2);
 }
+// #include <stdio.h>
+
+
+// int main ()
+// {
+// 	printf("%s", ft_strdup(NULL));
+// 	return (0) ;
+	
+// }
