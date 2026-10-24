@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 19:04:06 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/23 21:45:52 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/24 18:53:36 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -508,5 +508,182 @@
 // 	else
 // 		printf("Not found\n");
 
+// 	return (0);
+// }
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	char	*result;
+
+// 	result = ft_strtrim("  bonjour  ", " ");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_strtrim("xxxhelloxxx", "x");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_strtrim("abcBonjourcba", "abc");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_strtrim("bonjour", " ");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_strtrim("xxxx", "x");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	return (0);
+// }
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	char	*result;
+
+// 	result = ft_substr("Bonjour le monde", 0, 7);
+// 	printf("Test 1 : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_substr("Bonjour le monde", 8, 2);
+// 	printf("Test 2 : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_substr("Bonjour", 3, 20);
+// 	printf("Test 3 : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_substr("Bonjour", 10, 3);
+// 	printf("Test 4 : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_substr("Bonjour", 2, 0);
+// 	printf("Test 5 : [%s]\n", result);
+// 	free(result);
+
+// 	return (0);
+// }
+
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	printf("%c\n", ft_tolower('A'));
+// 	printf("%c\n", ft_tolower('Z'));
+// 	printf("%c\n", ft_tolower('b'));
+// 	printf("%c\n", ft_tolower('5'));
+// 	return (0);
+// }
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	printf("%c\n", ft_toupper('a'));
+// 	printf("%c\n", ft_toupper('Z'));
+// 	printf("%c\n", ft_toupper('b'));
+// 	printf("%c\n", ft_toupper('5'));
+// 	return (0);
+// }
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	t_list	*node;
+
+// 	node = ft_lstnew("Bonjour");
+// 	if (!node)
+// 		return (1);
+// 	printf("Content : %s\n", (char *)node->content);
+// 	printf("Next : %p\n", (void *)node->next);
+// 	free(node);
+// 	return (0);
+// }
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	t_list	*first;
+// 	t_list	*second;
+// 	t_list	*third;
+// 	t_list	*last;
+
+// 	first = ft_lstnew("Premier");
+// 	second = ft_lstnew("Deuxieme");
+// 	third = ft_lstnew("Troisieme");
+
+// 	first->next = second;
+// 	second->next = third;
+
+// 	last = ft_lstlast(first);
+// 	printf("Dernier element : %s\n", (char *)last->content);
+
+// 	free(first);
+// 	free(second);
+// 	free(third);
+// 	return (0);
+// }
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	t_list	*first;
+// 	t_list	*second;
+// 	t_list	*third;
+
+// 	first = ft_lstnew("Premier");
+// 	second = ft_lstnew("Deuxieme");
+// 	third = ft_lstnew("Troisieme");
+
+// 	if (!first || !second || !third)
+// 		return (free(first), free(second), free(third), 1);
+// 	first->next = second;
+// 	second->next = third;
+
+// 	printf("Taille de la liste : %u\n", ft_lstsize(first));
+// 	printf("Taille d'une liste vide : %u\n", ft_lstsize(NULL));
+
+// 	free(third);
+// 	free(second);
+// 	free(first);
+// 	return (0);
+// }
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	t_list	*lst;
+
+// 	lst = ft_lstnew("Premier");
+// 	ft_lstadd_back(&lst, ft_lstnew("Deuxieme"));
+// 	ft_lstadd_back(&lst, ft_lstnew("Troisieme"));
+
+// 	while (lst)
+// 	{
+// 		printf("%s\n", (char *)lst->content);
+// 		lst = lst->next;
+// 	}
 // 	return (0);
 // }

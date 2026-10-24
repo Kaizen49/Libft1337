@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 15:48:54 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/23 21:48:43 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/24 17:30:29 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,34 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
+
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	char	*result;
+
+// 	result = ft_substr("Bonjour le monde", 0, 7);
+// 	printf("Test 1 : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_substr("Bonjour le monde", 8, 2);
+// 	printf("Test 2 : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_substr("Bonjour", 3, 20);
+// 	printf("Test 3 : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_substr("Bonjour", 10, 3);
+// 	printf("Test 4 : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_substr("Bonjour", 2, 0);
+// 	printf("Test 5 : [%s]\n", result);
+// 	free(result);
+
+// 	return (0);
+// }

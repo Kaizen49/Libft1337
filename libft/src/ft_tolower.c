@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 16:25:40 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 19:40:40 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/24 17:45:47 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,14 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	printf("%c\n", ft_tolower('A'));
+// 	printf("%c\n", ft_tolower('Z'));
+// 	printf("%c\n", ft_tolower('b'));
+// 	printf("%c\n", ft_tolower('5'));
+// 	return (0);
+// }

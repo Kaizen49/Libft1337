@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 18:07:10 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 19:37:28 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/24 17:26:37 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,3 +53,33 @@ char	*ft_strtrim(char const *s1, char const *set)
 	result[i] = '\0';
 	return (result);
 }
+// #include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	char	*result;
+
+// 	result = ft_strtrim("  bonjour  ", " ");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_strtrim("xxxhelloxxx", "x");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_strtrim("abcBonjourcba", "abc");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_strtrim("bonjour", " ");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	result = ft_strtrim("xxxx", "x");
+// 	printf("Resultat : [%s]\n", result);
+// 	free(result);
+
+// 	return (0);
+// }
