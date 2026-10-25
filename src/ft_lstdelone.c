@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:48:12 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/19 19:50:43 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/25 12:19:09 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,19 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst)
+	if (!lst || !del)
 		return ;
-	if (del)
-		del(lst->content);
+	del(lst->content);
 	free(lst);
 }
+// #include "libft.h"
+// #include <stdlib.h>
+
+// int	main(void)
+// {
+// 	t_list	*node;
+
+// 	node = ft_lstnew(NULL);
+// 	ft_lstdelone(node, free);
+// 	return (0);
+// }

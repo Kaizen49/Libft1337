@@ -6,24 +6,27 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 21:16:19 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/15 17:31:04 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 11:21:00 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(char *str)
+#include "libft.h"
+
+int	ft_isalnum(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if ((str[i] >= '0' && str[i] <= '9')
-			|| (str[i] >= 'a' && str[i] <= 'z')
-			|| (str[i] >= 'A' && str[i] <= 'Z'))
-			i++;
-		else
-			return (0);
-	}
-	return (1);
+	if ((c >= '0' && c <= '9')
+		|| (c >= 'a' && c <= 'z')
+		|| (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
 }
+// #include "libft.h"
+// #include <stdio.h>
 
+// int	main(void)
+// {
+// 	printf("%d\n", ft_isalnum('A'));
+// 	printf("%d\n", ft_isalnum('7'));
+// 	printf("%d\n", ft_isalnum('@'));
+// 	return (0);
+// }

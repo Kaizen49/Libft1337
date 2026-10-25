@@ -6,18 +6,20 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 16:30:49 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/16 16:44:18 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 19:54:43 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strchr(const char *s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
-		if(s[i] == c)
+		if (s[i] == (char)c)
 			return ((char *)&s[i]);
 		i++;
 	}
@@ -25,3 +27,12 @@ char	*strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+
+// #include <stdio.h>
+
+// int main(void)
+
+// {
+// 	printf("%s",	ft_strchr("",67));
+// 	return (0);
+// }

@@ -6,28 +6,37 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 18:19:12 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/16 18:29:54 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:50:03 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *strdup(const char *s1)
+#include "libft.h"
+
+char	*ft_strdup(const char *s1)
 {
-    int i;
-    char *s2;
-    
-    i = 0;
-    while (s1[i])
-        i++;
-    s2 = malloc (sizeof(char) * (i + 1));
-    if (!s2)
-        return (NULL);
-    
-    i = 0 ;
-    while (s1[i])
-    {
-        s2[i] = s1[i];
-        i++;
-    }
-    s2[i] = '\0';
-    return  (s2);
+	size_t	i;
+	char	*s2;
+
+	if (!s1)
+		return (NULL);
+	i = 0;
+	while (s1[i])
+		i++;
+	s2 = malloc(sizeof(char) * (i + 1));
+	if (!s2)
+		return (NULL);
+	i = 0;
+	while (s1[i])
+	{
+		s2[i] = s1[i];
+		i++;
+	}
+	s2[i] = '\0';
+	return (s2);
 }
+// #include <stdio.h>
+// int main ()
+// {
+// 	printf("%s", ft_strdup(NULL));
+// 	return (0) ;
+// }

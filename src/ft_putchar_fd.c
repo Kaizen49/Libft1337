@@ -6,13 +6,22 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 21:19:39 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/18 21:30:07 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 12:58:37 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write (fd, &c, 1);
+	write (fd, &c, 1);
 }
+// #include "libft.h"
+
+// int	main(void)
+// {
+// 	ft_putchar_fd('A', 1);
+// 	ft_putchar_fd('\n', 1);
+// 	ft_putchar_fd('B', 2);
+// 	return (0);
+// }

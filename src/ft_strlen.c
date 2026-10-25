@@ -6,11 +6,12 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 17:45:15 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/16 19:13:53 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:53:32 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;

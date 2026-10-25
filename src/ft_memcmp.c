@@ -6,24 +6,36 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 17:18:50 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/16 17:27:45 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/23 12:13:06 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	memcmp(const void *s1, const void *s2, size_t n)
-{
-	const char *p1;
-	const char *p2;
-	size_t i;
+#include "libft.h"
 
-	p1 = (const char *)s1;
-	p2 = (const char *)s2;
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+	const unsigned char	*p1;
+	const unsigned char	*p2;
+	size_t				i;
+
+	p1 = (const unsigned char *)s1;
+	p2 = (const unsigned char *)s2;
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		if (p1[i] != p2[i])
-			return ((unsigned char)p1[i] - (unsigned char)p2[i]);
+			return (p1[i] - p2[i]);
 		i++;
 	}
-	return (0) ;
+	return (0);
 }
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	printf("%d\n", ft_memcmp("abc", "kbc", 3));
+// 	printf("%d\n", ft_memcmp("abc", "abd", 3));
+// 	printf("%d\n", ft_memcmp("abd", "abc", 3));
+// 	return (0);
+// }

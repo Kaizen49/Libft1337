@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by [YOUR_42_LOGIN].*
+*This project has been created as part of the 42 curriculum by selkasba.*
 
 # Libft
 
@@ -48,13 +48,11 @@ For this subject, `ft_calloc` must return a unique pointer that can be passed to
 
 The public list structure is:
 
-```c
 typedef struct s_list
 {
     void            *content;
     struct s_list   *next;
 } t_list;
-```
 
 Each node stores a generic content pointer and a pointer to the next node. The last node's `next` pointer is `NULL`.
 
@@ -87,9 +85,7 @@ Use a Unix-like environment with `cc`, `make`, and `ar` available, such as the c
 
 ### Compilation
 
-```sh
-make
-```
+``make``
 
 This compiles all 43 functions with `cc -Wall -Wextra -Werror`, then creates `libft.a` using `ar rcs`. There is no separate installation step. Unchanged object files are reused, and running `make` again without changes does not rebuild the archive. A change to `libft.h` recompiles the objects.
 
@@ -103,57 +99,16 @@ This compiles all 43 functions with `cc -Wall -Wextra -Werror`, then creates `li
 
 Linked-list files use names such as `ft_lstnew.c` and are included by `make`; this subject does not require a separate bonus build.
 
-### Use in another program
-
-Libft is a library, so it has no standalone executable or `main`. For a local test, create this `main.c` beside the library:
-
-```c
-#include "libft.h"
-#include <stdlib.h>
-
-int main(void)
-{
-    char *message;
-
-    message = ft_strjoin("Hello, ", "Libft!");
-    if (message == NULL)
-        return (1);
-    ft_putendl_fd(message, 1);
-    free(message);
-    return (0);
-}
-```
-
-Build the library, then compile and run the example:
-
-```sh
-make
-cc -Wall -Wextra -Werror -I. main.c -L. -lft -o example
-./example
-```
-
-Expected output:
-
-```text
-Hello, Libft!
-```
-
-Place `-lft` after the source or object files that use the library. Keep local test files outside the submitted repository, or remove them before submission; the subject prohibits unused files.
-
-### Validation
-
-Check the source with the campus Norminette. Test normal inputs, empty strings, boundary values, overlapping memory for `ft_memmove`, allocation-failure cleanup, and list operations on empty and nonempty lists. Compare libc replacements with their system counterparts where available and where inputs have defined behavior. Verify that a second `make` performs no compilation or archive update. Compilation alone does not establish functional correctness.
 
 ## Resources
 
-- **Libft subject, version 19.3**: the official project PDF and evaluation materials available through the 42 Intra project page. This is the authority for required prototypes and behavior.
+- **Libft subject, version 19.3**: the official project PDF and evaluation materials available through the 42 Intra project page. 
 - **Local manual pages**: use `man 3 strlen`, `man 3 memcpy`, `man 3 memmove`, `man 3 calloc`, `man 3 strdup`, `man 2 write`, and `man 3 free` to study contracts and edge cases.
 - [Linux man-pages](https://www.kernel.org/doc/man-pages/): system-call and C-library documentation.
 - [GNU Make manual](https://www.gnu.org/software/make/manual/): targets, prerequisites, pattern rules, and automatic variables.
-- [GNU ar manual](https://www.gnu.org/software/binutils/manual/binutils.html#ar): static-archive creation and maintenance.
-- [42 Norminette](https://github.com/42School/norminette): the official coding-style checker.
 - **The C Programming Language**, Brian W. Kernighan and Dennis M. Ritchie: pointers, arrays, memory management, and structures.
+- **The 42 Norm**
 
 ### AI usage
 
-ChatGPT was used to read the supplied Libft subject, generate the Makefile, and draft this README, including the function overview, build instructions, and usage example. The Makefile was checked in an isolated fixture with placeholder C files for build behavior; that check does not validate the actual library implementations. No library function implementations were supplied or inspected in this assistance. Update this disclosure if AI is used for other tasks later in the project.
+ChatGPT was used to read the supplied Libft subject,help with this README, including the function overview, and usage example for the compilation process and how it works.

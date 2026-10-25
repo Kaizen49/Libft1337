@@ -6,7 +6,7 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 20:35:29 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/20 19:05:16 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:49:23 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,3 +92,25 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (result);
 }
+
+// #include "libft.h"
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	**result;
+// 	int		i;
+
+// 	result = ft_split("Bonjour le monde", ' ');
+// 	if (!result)
+// 		return (1);
+// 	i = 0;
+// 	while (result[i])
+// 	{
+// 		printf("%s\n", result[i]);
+// 		free(result[i]);
+// 		i++;
+// 	}
+// 	free(result);
+// 	return (0);
+// }

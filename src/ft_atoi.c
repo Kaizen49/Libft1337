@@ -6,36 +6,35 @@
 /*   By: selkasba <selkasba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 18:42:07 by selkasba          #+#    #+#             */
-/*   Updated: 2026/10/13 19:09:47 by selkasba         ###   ########.fr       */
+/*   Updated: 2026/10/25 19:57:32 by selkasba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	size_t		i;
+	int			sign;
+	long		result;
 
 	i = 0;
 	sign = 1;
-	result	= 0;
-	
+	result = 0;
 	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
-	while(str[i] == '+' || str[i] == '-')
+	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
-			sign *= -1 ;
+			sign *= -1;
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = result*10 + (str[i] - '0');
+		result = result * 10 + (str[i] - '0');
 		i++;
 	}
-	return (result*sign);
-
+	return (result * sign);
 }
 	// #include<stdio.h>
 	// int main ()
@@ -43,8 +42,3 @@ int	ft_atoi(char *str)
 	// 	char *text = "999";
 	// 	printf("%d", ft_atoi(text));
 	// }
-		
-		
-
-	
-	
